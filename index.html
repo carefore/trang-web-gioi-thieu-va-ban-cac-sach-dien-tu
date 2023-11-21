@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thêm Sách Mới</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Thêm Sách Mới</h1>
+  <form id="bookForm" action="save_book.php" method="post">
+    <label for="title">Tiêu đề sách:</label>
+    <input type="text" id="title" name="title" required><br><br>
+    <label for="author">Tác giả:</label>
+    <input type="text" id="author" name="author" required><br><br>
+    <label for="price">Giá:</label>
+    <input type="number" id="price" name="price" required><br><br>
+    <input type="submit" value="Lưu sách">
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
